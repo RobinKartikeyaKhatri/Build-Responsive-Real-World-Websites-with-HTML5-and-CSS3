@@ -95,7 +95,8 @@ h2::after {
 }
 
 /* Icons */
-.fas {
+.fas,
+.fab {
     color: var(--primary-color);
     margin-bottom: 10px;
 }
