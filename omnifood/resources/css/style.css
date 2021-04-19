@@ -145,8 +145,9 @@ h2::after {
 
 /* Header */
 header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/hero.jpg') no-repeat center center/cover;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../css/img/hero.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -317,4 +318,41 @@ header {
 .city-feature a:hover {
     color: #555;
     border-bottom: 1px solid transparent;
+}
+
+/* Cutomer Testimonials */
+.section-testimonials {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./img/back-customers.jpg') no-repeat center center/cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: '\201C';
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
