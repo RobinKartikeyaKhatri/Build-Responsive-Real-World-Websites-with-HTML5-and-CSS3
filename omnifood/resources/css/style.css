@@ -280,3 +280,41 @@ header {
     width: auto;
     margin-right: 10px;
 }
+
+/* Section Cities */
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+.city-feature .fas {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.fa-twitter {
+    margin: 4px 10px 0 4px;
+}
+
+.city-feature a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--primary-color);
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.city-feature a:hover {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
