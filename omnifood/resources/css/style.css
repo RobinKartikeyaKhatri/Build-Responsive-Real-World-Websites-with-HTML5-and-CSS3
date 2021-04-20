@@ -103,7 +103,8 @@ h2::after {
 
 /* Buttons */
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -114,7 +115,8 @@ h2::after {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
     margin-right: 15px;
@@ -127,13 +129,16 @@ h2::after {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
     background: var(--secondary-color);
 }
 
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"] {
     border: 1px solid var(--secondary-color);
 }
 
@@ -409,4 +414,32 @@ cite img {
 .plan-box ul li {
     padding: 5px 0;
 
+}
+
+/* Contact Form */
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="checkbox"] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
 }
